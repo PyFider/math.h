@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "mymath.h"
+#include "src/math.h"
 
-int main(int argc, char **argv) {
-	double mant = atof(*++argv);
-	int exp = atoi(*++argv);
-
-	printf("%f\n", myldexp(mant, exp));
-	return 0;
+main(int argc, char **argv) 
+{
+	printf("%f\n", mytgamma(atof(*++argv)));
 }
+

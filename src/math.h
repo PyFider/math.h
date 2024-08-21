@@ -1,8 +1,9 @@
 #define PI 		3.141592653589793
 #define E  		2.718281828459045
 #define EPSILON 	1e-10
-#define nan		1
-#define ACC_TRIG_VAL  100
+#define STD_ACC_TRIG  	100
+#define nan		0.0f/0.0f
+#define inf		1.0f/0.0f
 
 #include "nearest_integer_floating_point_operations/floor.h"
 #include "nearest_integer_floating_point_operations/ceil.h"
@@ -21,6 +22,7 @@
 #include "more/fma.h"
 #include "more/fmod.h"
 #include "more/remainder.h"
+#include "more/abs.h"
 
 #include "exp_funcs/exp.h"
 #include "exp_funcs/log.h"
@@ -56,6 +58,29 @@
 #include "hyperbolic_functions/atgh.h"  /* TODO */
 #include "hyperbolic_functions/actgh.h" /* TODO */
 
-/* TODO FLOAT MANIPUTLATIONS */
 #include "float_manipulations/frexp.h"
 #include "float_manipulations/ldexp.h"
+#include "float_manipulations/modf.h"
+#include "float_manipulations/modff.h"
+#include "float_manipulations/modfl.h"
+#include "float_manipulations/scalbn.h"
+#include "float_manipulations/scalbnf.h"
+#include "float_manipulations/scalbnl.h"
+#include "float_manipulations/scalblnf.h"
+#include "float_manipulations/scalbln.h"
+#include "float_manipulations/scalblnl.h"
+#include "float_manipulations/copysign.h"
+#include "float_manipulations/copysignf.h"
+#include "float_manipulations/copysignl.h"
+#include "float_manipulations/nextafter.h"
+#include "float_manipulations/nexttoward.h"
+
+#include "classification/isinf.h"
+#include "classification/isnan.h" /* TODO */
+#include "classification/isnormal.h"
+#include "classification/signbit.h"
+#include "classification/isfinite.h"
+#include "classification/fpclassify.h"
+
+/* TODO errors and gamma functions */
+#include "errs_and_gamma_functions/tgamma.h" /* TODO */

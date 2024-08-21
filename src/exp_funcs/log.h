@@ -1,6 +1,6 @@
 double mylog(double x) {
     if (x <= 0)
-	return 1.0f/0.0f;
+	return nan;
 
     double res, term, term_squared, numerator;
     int n;

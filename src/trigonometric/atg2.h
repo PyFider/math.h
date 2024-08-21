@@ -1,4 +1,4 @@
-/* I'm sorry MUSL */
+/* thanks MUSL */
 
 #define __asuint64(f) ((union{double _f; unsigned long long _i;}){f})._i
 #define __EXTRACT_WORDS(hi,lo,d) {			  \
