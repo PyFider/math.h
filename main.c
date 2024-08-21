@@ -4,6 +4,6 @@
 
 main(int argc, char **argv) 
 {
-	printf("%f\n", mytgamma(atof(*++argv)));
+	double num = atof(*++argv);
+	printf("%f\n", myerfc(num, 100));
 }
-

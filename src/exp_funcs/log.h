@@ -1,5 +1,5 @@
 double mylog(double x) {
-    if (x <= 0)
+    if (x <= 0 || x == nan || x == inf)
 	return nan;
 
     double res, term, term_squared, numerator;
